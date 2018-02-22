@@ -1,14 +1,13 @@
-console.log('Loaded!');
-var element=document.getElementById('main-text');
-element.innerHTML='new value';
-//moventhe image
-var img=document.getElementById('madi');
-var marginLeft=0;
-function moveRight(){
-    marginLeft=marginLeft + 1;
-    img.style.marginLeft=marginLeft +'px'
-}
-madi.onclick = function(){
-    var interval=setInterval(moveRight,50);
-   
+var button=document.getElementById('counter');
+var counter=0;
+button.onClick=function(){
+    
+    //make a request to the counter
+    
+    //capture the response and store it in a variable
+    
+    //render the variable in a correct span
+    counter=counter+1;
+    var span=document.getElementById('count');
+    apan.innerHTML=counter.toString();
 };
