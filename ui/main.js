@@ -3,6 +3,12 @@ var element=document.getElementById('main-text');
 element.innerHTML='new value';
 //moventhe image
 var img=document.getElementById('madi');
-madi.onclick = function(){
-    madi.style.marginLeft='100px';
+var marginLeft=0;
+function moveRight(){
+    marginLeft=marginLeft + 10;
+    img.style.marginLeft=marginLeft +'px'
 }
+madi.onclick = function(){
+    var interval=setInterval(moveRight,100);
+   
+};
