@@ -20,7 +20,7 @@ button.onclick=function(){
     request.send(null);
     
 };
-var nameInput=document.getElementById('name');
+var nameInput=document.getElementById('name').value;
 console.log(nameInput);
 var name = nameInput.value;
 var submit=document.getElementById('submit_btn');
