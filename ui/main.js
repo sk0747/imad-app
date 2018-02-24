@@ -44,6 +44,7 @@ submit.onclick=function(){
             
         }
 };
+console.log(name+1);
   request.open('GET','http://skr001998.imad.hasura-app.io/submit-name?name='+name,true);
    request.send(null);  
 };
