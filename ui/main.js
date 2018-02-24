@@ -46,12 +46,4 @@ submit.onclick=function(){
     };
     request.open('GET','http://skr001998.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
-    var name=['name1','name2','name3','name4'];
-    var list='';
-    for(var i=0;i<name.length;i++){
-        list+='<li>' + name[i] + '</li>';
-        
-    }
-    var ul=document.getElementById('namelist');
-    ul.innerHTML=list;
 };
