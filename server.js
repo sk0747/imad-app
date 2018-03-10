@@ -15,7 +15,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    'article-one':{
+    'articleone':{
     title:'Article one |shashi kumar',
     heading:'Article one',
     date:'fab 17,2018',
@@ -106,7 +106,7 @@ app.get('/counter',function(req,res){
 app.get('/articles/:id',function(req,res){
     var x=req.params.id;
     if(x==='ab'){
-    res.send(createTemplate(articles.article-one));}
+    res.send(createTemplate(articles.articleone));}
     else{
         res.send('shubham');
     }
