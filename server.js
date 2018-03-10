@@ -14,7 +14,8 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
-var articleone={
+var articles={
+    'article-one':{
     title:'Article one |shashi kumar',
     heading:'Article one',
     date:'fab 17,2018',
@@ -28,7 +29,25 @@ var articleone={
                 this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.
             </p>`
     
+},
+'article-two':{
+     title:'Article one |shashi kumar',
+    heading:'Article one',
+    date:'fab 17,2018',
+     content: `<p>
+                this is the second content of my webapp.
+                </p>`
+},
+'article-three':{
+     title:'Article one |shashi kumar',
+    heading:'Article one',
+    date:'fab 17,2018',
+     content: `<p>
+                this is the second content of my webapp.
+                </p>`
+},
 };
+
 function createTemplate (data){
     var title=data.title;
     var heading=data.heading;
@@ -84,8 +103,15 @@ app.get('/counter',function(req,res){
     counter=counter + 1;
     res.send(counter.toString());
 });
-app.get('/Article-one',function(req,res){
-    res.send(createTemplate(articleone));
+app.get('/articles/:id',function(req,res){
+    var x=req.params.id;
+    if(x==='ab'){
+    res.send('sk');
+        
+    }
+    else{
+        res.send('shubham');
+    }
 });
 app.get('/Article-two',function(req,res){
     res.send('Article two is requested and we will serve soon');
