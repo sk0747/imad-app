@@ -106,9 +106,7 @@ app.get('/counter',function(req,res){
 app.get('/articles/:id',function(req,res){
     var x=req.params.id;
     if(x==='ab'){
-    res.send('sk');
-        
-    }
+    res.send(createTemplate(articles.article-one));}
     else{
         res.send('shubham');
     }
