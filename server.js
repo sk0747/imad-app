@@ -106,6 +106,7 @@ app.get('/counter',function(req,res){
 app.get('/articles/:id',function(req,res){
     var x=req.params.id;
     if(x==='article-one'){
+        console.log(x);
     res.send(createTemplate(articles.x));}
     else if(x==='article-two'){
         res.send(createTemplate(articles.articletwo));}
