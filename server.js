@@ -31,16 +31,16 @@ var articles={
     
 },
 'article-two':{
-     title:'Article one |shashi kumar',
-    heading:'Article one',
+     title:'Article two |shashi kumar',
+    heading:'Article two',
     date:'fab 17,2018',
      content: `<p>
                 this is the second content of my webapp.
                 </p>`
 },
 'article-three':{
-     title:'Article one |shashi kumar',
-    heading:'Article one',
+     title:'Article three |shashi kumar',
+    heading:'Article three',
     date:'fab 17,2018',
      content: `<p>
                 this is the second content of my webapp.
