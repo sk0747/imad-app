@@ -20,13 +20,12 @@ var articles={
     heading:'Article one',
     date:'fab 17,2018',
     content: `<p>
-                this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.
+                this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp
+            <p>
+                this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webappapp.this is the first content of my webapp.
             </p>
             <p>
-                this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.
-            </p>
-            <p>
-                this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webapp.
+                this is the first content of my webapp.this is the first content of my webapp.this is the first content of my webappapp.this is the first content of my webapp.
             </p>`
     
 },
