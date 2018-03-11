@@ -103,24 +103,11 @@ app.get('/counter',function(req,res){
     counter=counter + 1;
     res.send(counter.toString());
 });
-app.get('/articles/:id',function(req,res){
-    var x=req.params.id;
-    console.log(articles);
-    if(x==='article-one'){
-        
-    res.send(createTemplate(articles.x));}
-    else if(x==='article-two'){
-        res.send(createTemplate(articles.articletwo));}
-    else if(x==='article-three'){
-        res.send(createTemplate(articles.articlethree));
-    }
+app.get('/:articleName',function(req,res){
+    var articleName=req.params.articleNmae;
+   res.send(createTemplate(articles[articleNmae]));
 });
-app.get('/Article-two',function(req,res){
-    res.send('Article two is requested and we will serve soon');
-});
-app.get('/Article-three',function(req,res){
-    res.send('Article three is requested and we will serve soon');
-});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
