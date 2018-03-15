@@ -76,8 +76,6 @@ app.post('/create-user',function(req,res){
           res.send('user sucessfully created' + username);  
         }
         
-     
-        
     });
 });
 
